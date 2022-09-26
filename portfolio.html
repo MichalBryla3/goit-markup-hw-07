@@ -18,29 +18,31 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
       <div class="container">
-        <div class="header-location">
-          <nav class="navi">
+        <div class="page-header--location">
+          <nav class="page-header--nav">
             <a class="logo" href="index.html">
-              <span class="logo-header-first">Web</span
-              ><span class="logo-header-second">Studio</span></a
+              <span class="header__logo--first">Web</span
+              ><span class="header__logo--second">Studio</span></a
             >
-            <ul class="menu">
-              <li class="link">Agencja</li>
+            <ul class="nav">
               <li>
-                <a class="link underline-portfolio" href="portfolio.html"
+                <a class="nav__link" href="#">Agencja</a>
+              </li>
+              <li>
+                <a class="nav__link nav__link--underline" href="portfolio.html"
                   >Portfolio</a
                 >
               </li>
-              <li class="link">Kontakt</li>
+              <li><a class="nav__link" href="#">Kontakt</a></li>
             </ul>
           </nav>
           <ul class="contact-header">
-            <li class="contact-date">
+            <li class="contact__date">
               <a href=""
                 ><svg
-                  class="envelope-icon"
+                  class="contact__envelope-icon"
                   id="icon-envelope"
                   height="16px"
                   width="12px"
@@ -49,10 +51,10 @@
               ></a>
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="contact-date">
+            <li class="contact__date">
               <a href=""
                 ><svg
-                  class="smartphone-icon"
+                  class="contact__smartphone-icon"
                   id="icon-smartphone"
                   width="10px"
                   height="16px"
@@ -70,28 +72,26 @@
     <section class="section">
       <div class="container">
         <article>
-          <ul class="button-nav">
-            <li>
-              <button type="button" class="buttons">Wszystkie</button>
-            </li>
-            <li><button type="button" class="buttons">Strony</button></li>
-            <li><button type="button" class="buttons">Aplikacje</button></li>
-            <li><button type="button" class="buttons">Design</button></li>
-            <li><button type="button" class="buttons">Marketing</button></li>
-          </ul>
+          <div class="button">
+            <button type="button" class="button__body">Wszystkie</button>
+            <button type="button" class="button__body">Strony</button>
+            <button type="button" class="button__body">Aplikacje</button>
+            <button type="button" class="button__body">Design</button>
+            <button type="button" class="button__body">Marketing</button>
+          </div>
         </article>
         <article>
           <ul class="list">
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <img
                     src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio1.jpg?raw=true"
                     alt="laptop with pictures"
                     width="370"
                     height="294"
                   />
-                  <div class="overlay-card">
+                  <div class="list__item--overlay-card">
                     <p>
                       Technocrack jest popularną platformą wykorzystywaną do
                       rozpowszechniania koronawirusa. Firmy wykorzystują tę
@@ -101,15 +101,15 @@
                   </div>
                 </div>
 
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Technocrack</h3>
-                  <p class="text-portfolio">Strona internetowa</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Technocrack</h3>
+                  <p class="list__item--text">Strona internetowa</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio2.jpg?raw=true"
@@ -117,22 +117,22 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">
                     Grafika New Orlean vs Golden Star
                   </h3>
-                  <p class="text-portfolio">Dizajn</p>
+                  <p class="list__item--text">Dizajn</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio3.jpg?raw=true"
@@ -140,20 +140,20 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Restauracja Seafood</h3>
-                  <p class="text-portfolio">Aplikacja</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Restauracja Seafood</h3>
+                  <p class="list__item--text">Aplikacja</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio4.jpg?raw=true"
@@ -161,20 +161,20 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Projekt Prime</h3>
-                  <p class="text-portfolio">Marketing</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Projekt Prime</h3>
+                  <p class="list__item--text">Marketing</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio5.jpg?raw=true"
@@ -182,20 +182,20 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Projekt Boxes</h3>
-                  <p class="text-portfolio">Aplikacja</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Projekt Boxes</h3>
+                  <p class="list__item--text">Aplikacja</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio6.jpg?raw=true"
@@ -203,20 +203,20 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Inspiration has no Borders</h3>
-                  <p class="text-portfolio">Strona internetowa</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Inspiration has no Borders</h3>
+                  <p class="list__item--text">Strona internetowa</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio7.jpg?raw=true"
@@ -224,20 +224,20 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Magazyn Limited Edition</h3>
-                  <p class="text-portfolio">Dizajn</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Magazyn Limited Edition</h3>
+                  <p class="list__item--text">Dizajn</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio8.jpg?raw=true"
@@ -245,20 +245,20 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Projekt LAB</h3>
-                  <p class="text-portfolio">Marketing</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Projekt LAB</h3>
+                  <p class="list__item--text">Marketing</p>
                 </figcaption>
               </div>
             </li>
-            <li class="item">
-              <div class="hidden-card">
-                <div class="card">
+            <li class="list__item">
+              <div class="list__item--hidden-card">
+                <div class="list__item--card">
                   <div>
                     <img
                       src="https://github.com/MichalBryla3/goit-markup-hw-02/blob/main/images/portfolio9.jpg?raw=true"
@@ -266,14 +266,14 @@
                       width="370"
                       height="294"
                     />
-                    <div class="overlay-card">
+                    <div class="list__item--overlay-card">
                       <p>TEXT IN PROGRESS</p>
                     </div>
                   </div>
                 </div>
-                <figcaption class="card-description">
-                  <h3 class="title-portfolio">Growing Business</h3>
-                  <p class="text-portfolio">Aplikacja</p>
+                <figcaption class="list__item--card-description">
+                  <h3 class="list__item--title">Growing Business</h3>
+                  <p class="list__item--text">Aplikacja</p>
                 </figcaption>
               </div>
             </li>
@@ -284,33 +284,37 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <a class="logo-footer" href="index.html"
-          ><span class="logo-footer-first">Web</span
-          ><span class="logo-footer-second">Studio</span></a
+        <a class="logo" href="index.html"
+          ><span class="logo-footer--first">Web</span
+          ><span class="logo-footer--second">Studio</span></a
         >
 
         <address>
-          <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
-          <ul class="footer-dots">
+          <p class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <ul class="footer__address--style">
             <li>
-              <a class="link contact-footer" href="mailto:info@devstudio.com"
+              <a
+                class="nav__link nav__link--contact-footer"
+                href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link contact-footer" href="tel:+48111111111"
+              <a
+                class="nav__link nav__link--contact-footer"
+                href="tel:+48111111111"
                 >+48 111 111 111</a
               >
             </li>
           </ul>
         </address>
       </div>
-      <div class="join-to-us">
-        <h3 class="subtitle-social-media">DOŁĄCZ DO NAS</h3>
-        <ul class="icons-to-social-media">
-          <li class="social-icon-color">
+      <div class="footer-social-media--style">
+        <h3 class="footer-social-media__title">DOŁĄCZ DO NAS</h3>
+        <ul class="footer-social-media__icons">
+          <li class="footer-social-media__icons--style">
             <a href=""
-              ><svg class="footer-icon" id="icon-instagram">
+              ><svg class="footer__icon--size" id="icon-instagram">
                 <use
                   xlink:href="./images/icons.svg#icon-instagram"
                   width="20px"
@@ -320,9 +324,9 @@
                 ></use></svg
             ></a>
           </li>
-          <li class="social-icon-color">
+          <li class="footer-social-media__icons--style">
             <a href=""
-              ><svg class="footer-icon" id="icon-twitter">
+              ><svg class="footer__icon--size" id="icon-twitter">
                 <use
                   xlink:href="./images/icons.svg#icon-twitter"
                   width="20px"
@@ -332,9 +336,9 @@
                 ></use></svg
             ></a>
           </li>
-          <li class="social-icon-color">
+          <li class="footer-social-media__icons--style">
             <a href=""
-              ><svg class="footer-icon" id="icon-facebook">
+              ><svg class="footer__icon--size" id="icon-facebook">
                 <use
                   xlink:href="./images/icons.svg#icon-facebook"
                   width="20px"
@@ -344,9 +348,9 @@
                 ></use></svg
             ></a>
           </li>
-          <li class="social-icon-color">
+          <li class="footer-social-media__icons--style">
             <a href=""
-              ><svg class="footer-icon" id="icon-linkedin">
+              ><svg class="footer__icon--size" id="icon-linkedin">
                 <use
                   xlink:href="./images/icons.svg#icon-linkedin"
                   width="20px"
@@ -360,16 +364,16 @@
       </div>
       <form class="newsletter">
         <label
-          ><p class="newsletter-text">Zapisz się do newslettera</p>
+          ><p class="newsletter__title">Zapisz się do newslettera</p>
           <input
-            class="newsletter-mail-place"
+            class="newsletter__input"
             type="email"
             name="newsletter"
             placeholder="E-mail"
             required
           />
-          <button class="button-footer-newsletter" type="submit">
-            Zapisz się<svg class="icon-send-size" id="icon-send">
+          <button class="newsletter-button" type="submit">
+            Zapisz się<svg class="newsletter-button__icon" id="icon-send">
               <use
                 xlink:href="./images/icons.svg#icon-send"
                 width="24px"
