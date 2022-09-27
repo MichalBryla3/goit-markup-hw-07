@@ -1,0 +1,57 @@
+.our-team__social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px 30px;
+}
+
+.our-team__social-icon--style:hover,
+.our-team__social-icon--style:focus,
+.our-team__social-icon--style:active {
+  background-color: #2196f3;
+  fill: white;
+  transition: transform 250ms var(--transition);
+}
+
+.our-team__social-icon--style {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  border-radius: 50%;
+}
+.footer-social-media--style {
+  margin: 72px 0px;
+}
+.footer-social-media__icons {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+.footer-social-media__icons--style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin: 5px;
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-media__icons--style:hover,
+.footer-social-media__icons--style:focus,
+.footer-social-media__icons--style:active {
+  background-color: #2196f3;
+  transition: transform 250ms var(--transition);
+}
+.footer-social-media__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  padding: 0px 0px 20px 0;
+}
