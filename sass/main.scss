@@ -1,7 +1,13 @@
 @import "./utils/visually-hidden";
-@import "./base/common";
+@import "./utils/variables";
+
 @import "./base/conatiner";
 @import "./base/section";
-@import "./components/modal-btn";
+
 @import "./components/logo";
 @import "./components/social-links";
+@import "./components/footer";
+@import "./components/modal";
+@import "./components/header";
+@import "./components/index-main";
+@import "./components/portfolio-main";
