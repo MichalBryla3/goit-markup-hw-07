@@ -4,19 +4,17 @@
   align-items: center;
   padding: 0px 30px 30px;
 }
-
-.our-team__social-icon--style:hover,
-.our-team__social-icon--style:focus,
-.our-team__social-icon--style:active {
-  background-color: #2196f3;
-  fill: white;
-  transition: transform 250ms var(--transition);
-}
-
 .our-team__social-icon--style {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
   border-radius: 50%;
-}
 
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #2196f3;
+    fill: white;
+    transition: transform 250ms var(--transition);
+  }
+}

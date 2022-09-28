@@ -2,17 +2,17 @@
   font-weight: 500;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
-}
 
-.page-header--nav {
-  display: flex;
-  align-items: center;
-  margin: 0px 250px 0px 40px;
-}
-.page-header--location {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &--nav {
+    display: flex;
+    align-items: center;
+    margin: 0px 250px 0px 40px;
+  }
+  &--location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .nav {
@@ -25,19 +25,20 @@
   gap: 50px;
   margin-right: 0px;
 }
-.contact__date:hover > a {
-  color: #2196f3;
-  fill: #2196f3;
-}
+
 .contact__date {
   display: flex;
   justify-content: center;
-}
 
-.contact__date > a {
-  color: #757575;
-  fill: #757575;
-  text-decoration: none;
+  & > a {
+    color: #757575;
+    fill: #757575;
+    text-decoration: none;
+  }
+  &:hover > a {
+    color: var(--primary-color);
+    fill: #2196f3;
+  }
 }
 
 .contact__envelope-icon {
@@ -57,25 +58,25 @@
 .nav__link {
   text-decoration: none;
   cursor: pointer;
-}
+  color: black;
 
-.nav__link:focus,
-.nav__link:active,
-.nav__link:hover {
-  color: #2196f3;
-  fill: #2196f3;
-  transition: transform 250ms var(--transition);
-}
-
-.nav__link--underline::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 58px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
-  margin-top: 28px;
+  &:focus,
+  &:active,
+  &:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+    transition: transform 250ms var(--transition);
+  }
+  &--underline::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 58px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    margin-top: 28px;
+  }
 }
 
 .underline-agency::after {
