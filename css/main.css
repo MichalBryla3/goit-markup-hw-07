@@ -484,6 +484,12 @@ body {
       justify-content: space-around;
   padding-bottom: 94px;
 }
+.responsibilities__icon--style {
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
 .responsibilities__paragraph {
   color: #757575;
   line-height: 1.71;
