@@ -19,10 +19,10 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="container">
-        <div class="page-header--location">
-          <nav class="page-header--nav">
+    <header class="header">
+      <div class="header__container">
+        <div class="header--location">
+          <nav class="header--nav">
             <a class="logo" href="index.html">
               <span class="logo__header--first">Web</span
               ><span class="logo__header--second">Studio</span></a
@@ -37,7 +37,7 @@
               <li><a class="nav__link" href="#">Kontakt</a></li>
             </ul>
           </nav>
-          <ul class="contact-header">
+          <ul class="contact--header">
             <li class="contact__date">
               <a href=""
                 ><svg
@@ -69,23 +69,19 @@
       </div>
     </header>
     <main>
-      <section class="section effectiv-business">
-        <div class="container">
-          <h1 class="effectiv-business__title">
-            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
-          <button
-            class="effectiv-business__title--button"
-            type="button"
-            data-modal-open
-          >
+      <section class="slider">
+        <div class="slider__container">
+          <div class="slider__header">
+            <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          </div>
+          <button class="slider__main-part--btn" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <ul class="responsibilities">
+      <section class="responsibilities">
+        <div class="responsibilities__container">
+          <ul class="responsibilities__content">
             <li>
               <svg class="responsibilities__icon--style" id="icon-antenna-1">
                 <use
@@ -153,9 +149,9 @@
           </ul>
 
           <header>
-            <h2 class="tittle">Czym się zajmujemy</h2>
+            <h2 class="responsibilities__title">Czym się zajmujemy</h2>
           </header>
-          <ul class="responsibilities">
+          <ul class="responsibilities__content">
             <li class="responsibilities__picture">
               <img
                 src="https://github.com/MichalBryla3/goit-markup-hw-01/blob/main/images/photo1.jpg?raw=true"
@@ -188,14 +184,14 @@
         </div>
       </section>
 
-      <section class="section our-team">
-        <div class="container">
+      <section class="personel">
+        <div class="personel__container">
           <header>
-            <h2 class="tittle">Nasz zespół</h2>
+            <h2 class="personel__title">Nasz zespół</h2>
           </header>
-          <ul class="our-team__list">
+          <ul class="personel__list">
             <li>
-              <article class="our-team--style">
+              <article class="personel--style">
                 <figure>
                   <img
                     src="https://github.com/MichalBryla3/goit-markup-hw-01/blob/main/images/johndoe.jpg?raw=true"
@@ -204,13 +200,13 @@
                     height="260"
                   />
                   <figcaption>
-                    <h3 class="our-team__title">John Doe</h3>
-                    <p class="our-team__body">Product Designer</p>
-                    <ul class="our-team__social-media">
+                    <h3 class="personel__subtitle">John Doe</h3>
+                    <p class="personel__body">Product Designer</p>
+                    <ul class="personel__social-media">
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-instagram"
                           >
                             <use
@@ -225,7 +221,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-twitter"
                           >
                             <use
@@ -240,7 +236,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-facebook"
                           >
                             <use
@@ -255,7 +251,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-linkedin"
                           >
                             <use
@@ -273,7 +269,7 @@
               </article>
             </li>
             <li>
-              <article class="our-team--style">
+              <article class="personel--style">
                 <figure>
                   <img
                     src="https://github.com/MichalBryla3/goit-markup-hw-01/blob/main/images/johndoe2.jpg?raw=true"
@@ -282,13 +278,13 @@
                     height="260"
                   />
                   <figcaption class="text-team">
-                    <h3 class="our-team__title">John Doe</h3>
-                    <p class="our-team__body">Frontend Developer</p>
-                    <ul class="our-team__social-media">
+                    <h3 class="personel__subtitle">John Doe</h3>
+                    <p class="personel__body">Frontend Developer</p>
+                    <ul class="personel__social-media">
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-instagram"
                           >
                             <use
@@ -303,7 +299,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-twitter"
                           >
                             <use
@@ -318,7 +314,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-facebook"
                           >
                             <use
@@ -333,7 +329,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-linkedin"
                           >
                             <use
@@ -351,7 +347,7 @@
               </article>
             </li>
             <li>
-              <article class="our-team--style">
+              <article class="personel--style">
                 <figure>
                   <img
                     src="https://github.com/MichalBryla3/goit-markup-hw-01/blob/main/images/johndoe3.jpg?raw=true"
@@ -360,13 +356,13 @@
                     height="260"
                   />
                   <figcaption class="text-team">
-                    <h3 class="our-team__title">John Doe</h3>
-                    <p class="our-team__body">Marketing</p>
-                    <ul class="our-team__social-media">
+                    <h3 class="personel__subtitle">John Doe</h3>
+                    <p class="personel__body">Marketing</p>
+                    <ul class="personel__social-media">
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-instagram"
                           >
                             <use
@@ -381,7 +377,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-twitter"
                           >
                             <use
@@ -396,7 +392,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-facebook"
                           >
                             <use
@@ -411,7 +407,7 @@
                       <li>
                         <a href=""
                           ><svg
-                            class="our-team__social-icon--style"
+                            class="personel__social-icon--style"
                             id="icon-linkedin"
                           >
                             <use
@@ -429,91 +425,91 @@
               </article>
             </li>
             <li>
-                <figure class="our-team--style">
-                  <img
-                    src="https://github.com/MichalBryla3/goit-markup-hw-01/blob/main/images/johndoe4.jpg?raw=true"
-                    alt="man in glass"
-                    width="270"
-                    height="260"
-                  />
-                  <figcaption class="text">
-                    <h3 class="our-team__title">John Doe</h3>
-                    <p class="our-team__body">UI Designer</p>
-                    <ul class="our-team__social-media">
-                      <li>
-                        <a href=""
-                          ><svg
-                            class="our-team__social-icon--style"
-                            id="icon-instagram"
-                          >
-                            <use
-                              xlink:href="./images/icons.svg#icon-instagram"
-                              width="20px"
-                              height="20px"
-                              x="12px"
-                              y="13px"
-                            ></use></svg
-                        ></a>
-                      </li>
-                      <li>
-                        <a href=""
-                          ><svg
-                            class="our-team__social-icon--style"
-                            id="icon-twitter"
-                          >
-                            <use
-                              xlink:href="./images/icons.svg#icon-twitter"
-                              width="20px"
-                              height="20px"
-                              x="12px"
-                              y="13px"
-                            ></use></svg
-                        ></a>
-                      </li>
-                      <li>
-                        <a href=""
-                          ><svg
-                            class="our-team__social-icon--style"
-                            id="icon-facebook"
-                          >
-                            <use
-                              xlink:href="./images/icons.svg#icon-facebook"
-                              width="20px"
-                              height="20px"
-                              x="12px"
-                              y="13px"
-                            ></use></svg
-                        ></a>
-                      </li>
-                      <li>
-                        <a href=""
-                          ><svg
-                            class="our-team__social-icon--style"
-                            id="icon-linkedin"
-                          >
-                            <use
-                              xlink:href="./images/icons.svg#icon-linkedin"
-                              width="20px"
-                              height="20px"
-                              x="12px"
-                              y="13px"
-                            ></use></svg
-                        ></a>
-                      </li>
-                    </ul>
-                  </figcaption>
-                </figure>
+              <figure class="personel--style">
+                <img
+                  src="https://github.com/MichalBryla3/goit-markup-hw-01/blob/main/images/johndoe4.jpg?raw=true"
+                  alt="man in glass"
+                  width="270"
+                  height="260"
+                />
+                <figcaption class="text">
+                  <h3 class="personel__subtitle">John Doe</h3>
+                  <p class="personel__body">UI Designer</p>
+                  <ul class="personel__social-media">
+                    <li>
+                      <a href=""
+                        ><svg
+                          class="personel__social-icon--style"
+                          id="icon-instagram"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-instagram"
+                            width="20px"
+                            height="20px"
+                            x="12px"
+                            y="13px"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><svg
+                          class="personel__social-icon--style"
+                          id="icon-twitter"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-twitter"
+                            width="20px"
+                            height="20px"
+                            x="12px"
+                            y="13px"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><svg
+                          class="personel__social-icon--style"
+                          id="icon-facebook"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-facebook"
+                            width="20px"
+                            height="20px"
+                            x="12px"
+                            y="13px"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><svg
+                          class="personel__social-icon--style"
+                          id="icon-linkedin"
+                        >
+                          <use
+                            xlink:href="./images/icons.svg#icon-linkedin"
+                            width="20px"
+                            height="20px"
+                            x="12px"
+                            y="13px"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </figcaption>
+              </figure>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="tittle">Nasi klienci</h2>
-          <ul class="our-clients">
+      <section class="clients">
+        <div class="clients__container">
+          <h2 class="clients__title">Nasi klienci</h2>
+          <ul class="clients__content">
             <li>
               <a href=""
-                ><svg class="our-clients__picture" id="icon-company-1">
+                ><svg class="clients__picture" id="icon-company-1">
                   <use
                     xlink:href="./images/icons.svg#icon-company-1"
                   ></use></svg
@@ -522,7 +518,7 @@
 
             <li>
               <a href=""
-                ><svg class="our-clients__picture" id="icon-company-2">
+                ><svg class="clients__picture" id="icon-company-2">
                   <use
                     xlink:href="./images/icons.svg#icon-company-2"
                   ></use></svg
@@ -530,7 +526,7 @@
             </li>
             <li>
               <a href=""
-                ><svg class="our-clients__picture" id="icon-company-3">
+                ><svg class="clients__picture" id="icon-company-3">
                   <use
                     xlink:href="./images/icons.svg#icon-company-3"
                   ></use></svg
@@ -538,7 +534,7 @@
             </li>
             <li>
               <a href=""
-                ><svg class="our-clients__picture" id="icon-company-4">
+                ><svg class="clients__picture" id="icon-company-4">
                   <use
                     xlink:href="./images/icons.svg#icon-company-4"
                   ></use></svg
@@ -546,7 +542,7 @@
             </li>
             <li>
               <a href=""
-                ><svg class="our-clients__picture" id="icon-company-5">
+                ><svg class="clients__picture" id="icon-company-5">
                   <use
                     xlink:href="./images/icons.svg#icon-company-5"
                   ></use></svg
@@ -554,7 +550,7 @@
             </li>
             <li>
               <a href=""
-                ><svg class="our-clients__picture" id="icon-company-6">
+                ><svg class="clients__picture" id="icon-company-6">
                   <use
                     xlink:href="./images/icons.svg#icon-company-6"
                   ></use></svg
@@ -566,7 +562,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="footer__container">
         <a class="logo" href="index.html"
           ><span class="logo-footer--first">Web</span
           ><span class="logo-footer--second">Studio</span></a
