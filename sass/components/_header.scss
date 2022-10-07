@@ -1,8 +1,11 @@
-.page-header {
+.header {
   font-weight: 500;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
   margin-left: -40px;
+  &__container {
+    @extend %container;
+  }
 
   &--nav {
     display: flex;
@@ -21,7 +24,7 @@
   gap: 46px;
 }
 
-.contact-header {
+.contact--header {
   display: flex;
   gap: 50px;
   margin-right: 0px;

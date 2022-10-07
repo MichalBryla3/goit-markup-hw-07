@@ -1,11 +1,4 @@
-.tittle {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.effectiv-business {
+.slider {
   background-color: #2f303a;
   height: 600px;
   width: 100%;
@@ -20,15 +13,19 @@
   background-repeat: no-repeat;
   background-size: 1600px;
   background-position: 50% 50%;
+  @extend %section;
 
-  &__title {
+  &__container {
+    @extend %container;
+  }
+  &__header {
     font-size: 44px;
     color: white;
     font-weight: 900;
     line-height: 1.36;
     border: 200px 452px 280px 452px;
   }
-  &__title--button {
+  &__main-part--btn {
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
@@ -44,19 +41,29 @@
 }
 
 .responsibilities {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 94px;
-  
-  &__icon--style {background-color: #F5F4FA;
-  width: 270px;
-height: 120px;
-margin-bottom: 30px;}
+  @extend %section;
+  &__container {
+    @extend %container;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 94px;
+  }
+
+  &__icon--style {
+    background-color: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
 
   &__paragraph {
     color: #757575;
     line-height: 1.71;
-    
+  }
+  &__title {
+    @extend %title;
   }
   &__picture {
     padding: 0px;
@@ -86,14 +93,18 @@ margin-bottom: 30px;}
   }
 }
 
-
-
-.our-team {
+.personel {
   background-color: #f5f4fa;
   padding-bottom: 50px;
   margin-left: -10px;
   margin-right: 30px;
-
+  @extend %section;
+  &__container {
+    @extend %container;
+  }
+  &__title {
+    @extend %title;
+  }
   &--style {
     background-color: white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -106,7 +117,7 @@ margin-bottom: 30px;}
     gap: 28px;
     padding-bottom: 94px;
   }
-  &__title {
+  &__subtitle {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
@@ -122,18 +133,29 @@ margin-bottom: 30px;}
   }
 }
 
-.our-clients {
-  display: flex;
-  padding: 0px;
+.clients {
+  @extend %section;
 
-  & > li:last-child {
+  &__container {
+    @extend %container;
+  }
+  &__title {
+    @extend %title;
+  }
+
+  &__content {
+    display: flex;
+    padding: 0px;
+  }
+
+  &__content > li:last-child {
     margin-right: 15px;
   }
-  & > li {
+  &__content > li {
     display: flex;
     justify-content: space-between;
   }
-  & > li:first-child {
+  &__content > li:first-child {
     margin-left: 19px;
   }
 
