@@ -1,4 +1,4 @@
-.footer-social-media--style {
+.footer-social-media {
   margin: 72px 0px;
 }
 .footer-social-media__icons {
@@ -6,7 +6,7 @@
   justify-content: flex-start;
   padding: 0px;
 
-  &--style {
+  &--special {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
     padding-top: 20px;
   }
 
-  &__address--style {
+  &__address--padding {
     padding: 0px;
 
     & > li {
@@ -67,7 +67,7 @@
   }
 }
 
-.nav__link--contact-footer {
+.nav__link--contact-color {
   color: rgba(255, 255, 255, 0.6);
 }
 
