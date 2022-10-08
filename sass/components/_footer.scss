@@ -1,7 +1,7 @@
-.footer-social-media {
+.footer-social {
   margin: 72px 0px;
 }
-.footer-social-media__icons {
+.footer-social__icons {
   display: flex;
   justify-content: flex-start;
   padding: 0px;
@@ -27,7 +27,7 @@
   }
 }
 
-.footer-social-media__title {
+.footer-social__title {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
@@ -72,11 +72,14 @@
 }
 
 .newsletter {
-  margin: 0px 0px 20px 78px;
+  margin: 0px 0px 20px 155px;
   display: flex;
   justify-self: baseline;
   align-items: baseline;
 
+  &__container {
+    @extend %container;
+  }
   &__title {
     color: white;
     text-transform: uppercase;

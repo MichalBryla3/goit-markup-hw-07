@@ -202,7 +202,7 @@
                   <figcaption>
                     <h3 class="personel__subtitle">John Doe</h3>
                     <p class="personel__body">Product Designer</p>
-                    <ul class="personel__social-media">
+                    <ul class="personel__social">
                       <li>
                         <a href=""
                           ><svg
@@ -277,7 +277,7 @@
                   <figcaption class="text-team">
                     <h3 class="personel__subtitle">John Doe</h3>
                     <p class="personel__body">Frontend Developer</p>
-                    <ul class="personel__social-media">
+                    <ul class="personel__social">
                       <li>
                         <a href=""
                           ><svg
@@ -352,7 +352,7 @@
                   <figcaption class="text-team">
                     <h3 class="personel__subtitle">John Doe</h3>
                     <p class="personel__body">Marketing</p>
-                    <ul class="personel__social-media">
+                    <ul class="personel__social">
                       <li>
                         <a href=""
                           ><svg
@@ -426,7 +426,7 @@
                 <figcaption class="text">
                   <h3 class="personel__subtitle">John Doe</h3>
                   <p class="personel__body">UI Designer</p>
-                  <ul class="personel__social-media">
+                  <ul class="personel__social">
                     <li>
                       <a href=""
                         ><svg class="personel__social-icon" id="icon-instagram">
@@ -567,10 +567,10 @@
           </ul>
         </address>
       </div>
-      <div class="footer-social-media">
-        <h3 class="footer-social-media__title">DOŁĄCZ DO NAS</h3>
-        <ul class="footer-social-media__icons">
-          <li class="footer-social-media__icons--special">
+      <div class="footer-social">
+        <h3 class="footer-social__title">DOŁĄCZ DO NAS</h3>
+        <ul class="footer-social__icons">
+          <li class="footer-social__icons--special">
             <a href=""
               ><svg class="footer__icon--size" id="icon-instagram">
                 <use
@@ -582,7 +582,7 @@
                 ></use></svg
             ></a>
           </li>
-          <li class="footer-social-media__icons--special">
+          <li class="footer-social__icons--special">
             <a href=""
               ><svg class="footer__icon--size" id="icon-twitter">
                 <use
@@ -594,7 +594,7 @@
                 ></use></svg
             ></a>
           </li>
-          <li class="footer-social-media__icons--special">
+          <li class="footer-social__icons--special">
             <a href=""
               ><svg class="footer__icon--size" id="icon-facebook">
                 <use
@@ -606,7 +606,7 @@
                 ></use></svg
             ></a>
           </li>
-          <li class="footer-social-media__icons--special">
+          <li class="footer-social__icons--special">
             <a href=""
               ><svg class="footer__icon--size" id="icon-linkedin">
                 <use
@@ -621,26 +621,28 @@
         </ul>
       </div>
       <form class="newsletter">
-        <label
-          ><p class="newsletter__title">Zapisz się do newslettera</p>
-          <input
-            class="newsletter__input"
-            type="email"
-            name="newsletter"
-            placeholder="E-mail"
-            required
-          />
-          <button class="newsletter-button" type="submit">
-            Zapisz się<svg class="newsletter-button__icon" id="icon-send">
-              <use
-                xlink:href="./images/icons.svg#icon-send"
-                width="24px"
-                height="24px"
-                y="2px"
-              ></use>
-            </svg>
-          </button>
-        </label>
+        <div class="newsletter__container">
+          <label
+            ><p class="newsletter__title">Zapisz się do newslettera</p>
+            <input
+              class="newsletter__input"
+              type="email"
+              name="newsletter"
+              placeholder="E-mail"
+              required
+            />
+            <button class="newsletter-button" type="submit">
+              Zapisz się<svg class="newsletter-button__icon" id="icon-send">
+                <use
+                  xlink:href="./images/icons.svg#icon-send"
+                  width="24px"
+                  height="24px"
+                  y="2px"
+                ></use>
+              </svg>
+            </button>
+          </label>
+        </div>
       </form>
     </footer>
 

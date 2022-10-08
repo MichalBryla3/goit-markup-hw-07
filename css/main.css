@@ -65,7 +65,7 @@ body {
   line-height: 1.19;
 }
 
-.personel__social-media {
+.personel__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +619,16 @@ body {
   margin-left: 16px;
   margin-right: 10px;
 }
-.list__item--card {
+.list__item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  -webkit-transition: -webkit-transform 250ms var(--transition);
+  transition: -webkit-transform 250ms var(--transition);
+  transition: transform 250ms var(--transition);
+  transition: transform 250ms var(--transition), -webkit-transform 250ms var(--transition);
+}
+
+.card {
   position: relative;
   padding: 0;
   text-align: left;
@@ -632,15 +641,7 @@ body {
   overflow: hidden;
   cursor: pointer;
 }
-.list__item:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  -webkit-transition: -webkit-transform 250ms var(--transition);
-  transition: -webkit-transform 250ms var(--transition);
-  transition: transform 250ms var(--transition);
-  transition: transform 250ms var(--transition), -webkit-transform 250ms var(--transition);
-}
-.list__item--hidden-card:hover .list__item--card .list__item--overlay-card {
+.card--hidden:hover .card .card--overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   background-color: rgba(33, 150, 243, 0.9);
@@ -649,12 +650,12 @@ body {
   transition: transform 250ms var(--transition);
   transition: transform 250ms var(--transition), -webkit-transform 250ms var(--transition);
 }
-.list__item--hidden-card {
+.card--hidden {
   border: 1px solid #eeeeee;
   margin-right: 0px;
   margin-left: 0px;
 }
-.list__item--overlay-card {
+.card--overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -667,7 +668,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list__item--overlay-card > p {
+.card--overlay > p {
   color: white;
   padding: 49px 45px 49px 24px;
   font-weight: 400;
@@ -675,28 +676,28 @@ body {
   line-height: 1.56;
   letter-spacing: 0.03em;
 }
-.list__item--card-description {
+.card__container {
   display: block;
   text-align: left;
   padding: 20px 24px 20px 24px;
 }
-.list__item--title {
+.card__title {
   font-size: 18px;
   font-weight: 700;
   color: #212121;
   line-height: 2;
 }
-.list__item--text {
+.card__content {
   font-size: 16px;
   color: #757575;
   line-height: 1.87;
 }
 
-.footer-social-media {
+.footer-social {
   margin: 72px 0px;
 }
 
-.footer-social-media__icons {
+.footer-social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,7 +706,7 @@ body {
           justify-content: flex-start;
   padding: 0px;
 }
-.footer-social-media__icons--special {
+.footer-social__icons--special {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,7 +724,7 @@ body {
   margin: 5px;
   fill: rgba(255, 255, 255, 0.1);
 }
-.footer-social-media__icons--special:hover, .footer-social-media__icons--special:focus, .footer-social-media__icons--special:active {
+.footer-social__icons--special:hover, .footer-social__icons--special:focus, .footer-social__icons--special:active {
   background-color: #2196f3;
   -webkit-transition: -webkit-transform 250ms var(--transition);
   transition: -webkit-transform 250ms var(--transition);
@@ -731,7 +732,7 @@ body {
   transition: transform 250ms var(--transition), -webkit-transform 250ms var(--transition);
 }
 
-.footer-social-media__title {
+.footer-social__title {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
@@ -774,7 +775,7 @@ body {
 }
 
 .newsletter {
-  margin: 0px 0px 20px 78px;
+  margin: 0px 0px 20px 155px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,7 +846,7 @@ body {
   margin-left: 24px;
 }
 
-.header__container, .slider__container, .responsibilities__container, .personel__container, .clients__container, .portfolio__container {
+.header__container, .slider__container, .responsibilities__container, .personel__container, .clients__container, .portfolio__container, .newsletter__container {
   width: 1200px;
   margin: auto;
 }
