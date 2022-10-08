@@ -576,7 +576,7 @@ body {
   transition: transform 250ms var(--transition), -webkit-transform 250ms var(--transition);
 }
 
-.button {
+.portfolio__filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -586,7 +586,7 @@ body {
           justify-content: center;
   padding-bottom: 50px;
 }
-.button__body {
+.portfolio__filters__btn {
   cursor: pointer;
   background-color: #f5f4fa;
   font-weight: 500;
@@ -596,7 +596,7 @@ body {
   border-style: none;
   padding: 6px 22px;
 }
-.button__body:focus, .button__body:hover {
+.portfolio__filters__btn:focus, .portfolio__filters__btn:hover {
   color: white;
   background-color: var(--primary-color);
   -webkit-transition: -webkit-transform 250ms var(--transition);
@@ -676,7 +676,7 @@ body {
   line-height: 1.56;
   letter-spacing: 0.03em;
 }
-.card__container {
+.card__content {
   display: block;
   text-align: left;
   padding: 20px 24px 20px 24px;
@@ -687,7 +687,7 @@ body {
   color: #212121;
   line-height: 2;
 }
-.card__content {
+.card__text {
   font-size: 16px;
   color: #757575;
   line-height: 1.87;
