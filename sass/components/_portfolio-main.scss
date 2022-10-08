@@ -4,14 +4,13 @@
   &__container {
     @extend %container;
   }
-}
 
-.portfolio__filters {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  padding-bottom: 50px;
-
+  &__filters {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
   &__btn {
     cursor: pointer;
     background-color: #f5f4fa;

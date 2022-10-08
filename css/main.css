@@ -586,7 +586,7 @@ body {
           justify-content: center;
   padding-bottom: 50px;
 }
-.portfolio__filters__btn {
+.portfolio__btn {
   cursor: pointer;
   background-color: #f5f4fa;
   font-weight: 500;
@@ -596,7 +596,7 @@ body {
   border-style: none;
   padding: 6px 22px;
 }
-.portfolio__filters__btn:focus, .portfolio__filters__btn:hover {
+.portfolio__btn:focus, .portfolio__btn:hover {
   color: white;
   background-color: var(--primary-color);
   -webkit-transition: -webkit-transform 250ms var(--transition);
